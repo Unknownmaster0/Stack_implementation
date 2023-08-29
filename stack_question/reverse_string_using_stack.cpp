@@ -19,6 +19,8 @@ int main()
         s.push(ch);
         i++;
     }
+    
+    cout<<"size of stack after pushing input -> "<<s.size()<<endl;
 
     string ans = ""; // string to store the ans.
 // getting the value from the stack.
