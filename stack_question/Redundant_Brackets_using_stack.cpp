@@ -8,7 +8,8 @@
 using namespace std;
 
 /*
-    Concept ->
+    Concept -> Read more concept from copy -:
+
                 1. If the string character is open bracket || operator, then push back into the stack.
                 2. If the string character is closing bracket || lower case alphabets then do some different things ->
                     if lower case then not do anything or simply ignore it.
