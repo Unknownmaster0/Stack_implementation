@@ -2,7 +2,34 @@
 #include <stack>
 using namespace std;
 
-void solve(stack<int>&s, int itr, int size)
+// Time complexity -> O(n) n is the number of element in the stack
+// Space complexity -> O(n/2) = O(n) size of stack.
+
+/*
+void removingMiddle(stack<int>&s , int n)
+{
+    int* arr = new int[n/2];
+    int i = 0;
+    for(; i<n/2; i++)
+    {
+        arr[i] = s.top();
+        s.pop();
+    }
+
+    s.pop(); // removing the middle element.
+
+    // Again pushing the popped element above the middle
+    for(int i = n/2 -1; i >= 0; i--)
+    {
+        s.push(arr[i]);
+    }
+
+    return;
+}
+
+*/
+
+void solve(stack<int> &s, int itr, int size)
 {
     if (itr == size / 2 + 1)
     {
@@ -14,10 +41,9 @@ void solve(stack<int>&s, int itr, int size)
     s.pop();
     solve(s, itr + 1, size);
     s.push(num);
-
 }
 
-void deleteMiddle(stack<int>&s, int size)
+void deleteMiddle(stack<int> &s, int size)
 {
     int itr = 1; // iterator.
     solve(s, itr, size);
@@ -42,7 +68,7 @@ int main()
 
     deleteMiddle(s, s.size());
 
-    cout<<"stack after deleting -> "<<endl;
+    cout << "stack after deleting -> " << endl;
     while (!s.empty())
     {
         cout << s.top() << " ";
