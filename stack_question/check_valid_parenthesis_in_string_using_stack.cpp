@@ -52,7 +52,7 @@ bool isValidParenthesis(string str)
             // if the stack is not empty.
             if (!s.empty())
             {
-                if (isMatch(ch, s))
+                if ( isMatch(ch, s) ) 
                 {
                     s.pop();
                 }
