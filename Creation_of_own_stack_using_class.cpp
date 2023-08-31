@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Stack_Class.cpp"
+#include "Stack_Class_using_array.cpp"
 using namespace std;
 
 // Class is declared in "Stack_Class.cpp" file name in this folder only.
