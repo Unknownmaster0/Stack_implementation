@@ -2,6 +2,7 @@
 using namespace std;
 
 /*
+question link -> https://www.codingninjas.com/studio/problems/n-stacks-in-an-array_1164271?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0%3Fsource%3Dyoutube&campaign=Lovebabbarcodestudio11thfeb
     You have given, n number of stacks and one single array. You need to make the user defined function of push and pop
     for all stacks using the single array.
 */
