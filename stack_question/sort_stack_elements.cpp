@@ -35,6 +35,13 @@ void sort(stack<int> &s, int num)
     // recursive call.
     sort(s, num);
 
+/*  this can be also written for the above thing.
+    int store = s.top();
+    s.pop();
+    
+    sort(s,num);
+*/
+
     s.push(store);
 }
 
